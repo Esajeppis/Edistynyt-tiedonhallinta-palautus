@@ -1,6 +1,6 @@
-#Edistynyt tiedonhallinta palautus
+# Edistynyt tiedonhallinta palautus
 
-##Ohjeet sovelluksen käynnistämiseen
+## Ohjeet sovelluksen käynnistämiseen
 
 1. Mukana on sqlworkbench file millä voi forward engineerata tietokanta, tässä tapauksessa käytämme Xampp ohjelmistoa.
    
@@ -12,7 +12,7 @@
 
 5. Kun tiedot on lisätty tietokantaan voit tehdä konsolisovelluksesta valmiita aggregointeja
 
-#Ohje Fastapin käynnistykseen
+# Ohje Fastapin käynnistykseen
 
 1. Ohjelma käynnistyy komentoriviltä uvicorn main_api:app
 2. Selaimesta voi apia käydä testaamassa osoitteesta http://localhost:8000/docs

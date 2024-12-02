@@ -6,6 +6,7 @@ from pydantic import BaseModel
 from sqlalchemy import text
 from db import DW
 from passlib.hash import pbkdf2_sha512 as pl
+from dotenv import load_dotenv
 
 
 #ohjelma kaynnistys uvicorn main_api:app
@@ -19,7 +20,7 @@ class RegisterRequest(BaseModel):
     password:str
     roles_id:int
 
-SECRET_KEY ='dsadsadasdasd213123!!!#2dasdasd2312knnbdsahdhaks!'
+SECRET_KEY =os.getenv("SECRET_KEY")
 
 
 def require_login(dw:DW,authorization=Header(None,alias='api_key')):

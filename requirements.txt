@@ -8,3 +8,4 @@ passlib
 fastapi
 uvicorn[standard]
 pyjwt
+python-dotenv
